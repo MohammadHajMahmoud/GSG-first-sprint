@@ -11,7 +11,7 @@ Hey there! I'm excited to share my 20-Day Learning JavaScript Challenge journey 
 
 ## Courses
 
-I've handpicked a set of courses to guide me through this learning journey:
+through this sprit i will be studying the following courses :
 
 1. [JavaScript: From First Steps to Professional](https://frontendmasters.com/courses/javascript-first-steps/)
 2. [JavaScript: The Hard Parts, v2](https://frontendmasters.com/courses/javascript-hard-parts-v2/)
@@ -37,7 +37,7 @@ To make the most of this challenge, I've devised a structured daily learning pro
 
 ## Guidelines
 
-To make the most of this challenge, I've set some guidelines for myself:
+To make the most of this challenge, i'll be following these procedures:
 
 - **Stay Committed:** I will stay committed to the 20-day challenge, no matter how tough it gets.
 
