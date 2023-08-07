@@ -38,5 +38,10 @@ in tree structure it will look like this
 document.title //outputs the title of the doc
 document.body // outputs the body element 
 document.body.children // outputs an HTMLCollection with the items in the page
-document.getElementById("board")==document.querySelector("#board")// outputs the first element that the dom finds with an id of "board"
+document.getElementById("board")===document.querySelector("#board")// outputs the first element that
+ the dom finds with an id of "board"
+document.getElementsByTagName("h1")===document.querySelectorAll// outputs all the items with h1 tag
+docuement.getElementsByClassName("player")===document.querySelectorAll(".player") // outputs all items with the class of player
 ```
+## Length and .textContent
+
