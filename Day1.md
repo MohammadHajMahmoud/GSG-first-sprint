@@ -4,7 +4,7 @@
 
 - The Document Object Model (DOM) is a programming interface provided by web browsers that represents the items on a web page whether its a header or a div or many others
 - Using the dom we can modify, edit and add items to the page
-- 
+
 ## The DOM Tree
 
 the browser creates a DOM tree that represents the page's structure. Each element in the HTML becomes a node in the DOM tree.
