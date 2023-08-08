@@ -21,7 +21,8 @@ These courses come highly recommended, and I'm eager to dive into them to gain a
 
 ## Coding Challenges
 
-I'll be regularly taking up coding challenges provided by the GSG team to put my learning into practice. The first challenge is already here: [First Challenge](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/convert-celsius-to-fahrenheit).
+I'll be regularly taking up coding challenges provided by the GSG team to put my learning into practice.
+[First Challenge](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/convert-celsius-to-fahrenheit).
 
 ## Daily Learning Process
 
