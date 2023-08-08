@@ -35,13 +35,24 @@ in tree structure it will look like this
 ```
 ## Finding elemments in a web page
 ```javascript
+
 document.title //outputs the title of the doc
-document.body // outputs the body element 
+
+document.body // outputs the body element
+
 document.body.children // outputs an HTMLCollection with the items in the page
+
 document.getElementById("board")===document.querySelector("#board")// outputs the first element that
  the dom finds with an id of "board"
+
 document.getElementsByTagName("h1")===document.querySelectorAll// outputs all the items with h1 tag
+
 docuement.getElementsByClassName("player")===document.querySelectorAll(".player") // outputs all items with the class of player
+
 ```
 ## Length and .textContent
+```javascript
+docuemnt.getElementsByClassName("player").length// outputs number of elemnts which have player class
 
+document.getElementByid("pl-name").textContent // outputs the Text/string of the elemen that have an id of "pl-name"
+```
