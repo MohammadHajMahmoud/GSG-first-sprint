@@ -56,3 +56,14 @@ docuemnt.getElementsByClassName("player").length// outputs number of elemnts whi
 
 document.getElementByid("pl-name").textContent // outputs the Text/string of the elemen that have an id of "pl-name"
 ```
+## Finding Elements Excercise
+```javascript
+//Get the the elements with p tag
+docuemnt.getElementsByTagName(p)
+//find X text
+document.querySelector(#pl-symbol).textContent
+//get the number of squares in the board
+document.getElementsByClassName(.square).length
+// get the text "a game you know"
+document.querySelector("h2").textContent
+```
