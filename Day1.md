@@ -55,6 +55,10 @@ docuement.getElementsByClassName("player")===document.querySelectorAll(".player"
 docuemnt.getElementsByClassName("player").length// outputs number of elemnts which have player class
 
 document.getElementByid("pl-name").textContent // outputs the Text/string of the elemen that have an id of "pl-name"
+
+document.getElementByid("pl-name").textContent= "mohammad" //replaces the text in pl-name element to mohammad
+
+document.getElementByid("pl-name").append("& loves one piece") //concats or adds the statment to the text "mohammad"
 ```
 ## Finding Elements Excercise
 ```javascript
@@ -66,4 +70,14 @@ document.querySelector(#pl-symbol).textContent
 document.getElementsByClassName(.square).length
 // get the text "a game you know"
 document.querySelector("h2").textContent
+```
+## Changing web page Exercise
+```javascript
+//change player name
+document.querySelectorAll("#pl-name").textContent = "goofy"
+//swap players symbols
+document.getElementBy("p1-symbol").textContent="O"
+document.getElementBy("p1-symbol").textContent="X"
+//change the subtitle text by adding something to it
+document.querySelector("header h2").append("KEK")
 ```
