@@ -54,4 +54,90 @@ an expression is a piece of code that produce a value
 ## let, const 
 - **let** assings a value to a variable ex ```let name = moha```
 - **const** does the same but its changable  ```const id = 4056445416```
-Variables 
+  
+#Variables 
+variables point to values and do not contain them 
+
+## Expression vs Statment
+Statment tells js to do something while an expression asks js for a value  
+```javascript
+ //Expression Ex 
+document.getElementById("id")pp
+//Statment Ex
+let fruits = [banana , apple]
+```
+#DELIEVERABLES 
+# Learning sprint (1), week (3), day (2) delieverables
+
+### QUESTION #1
+
+Consider the following JavaScript code:
+
+```javascript
+let a = 0;
+let b = "0";
+let c = false;
+let d = "false";
+
+console.log(a == b); // true , == doesnt compare data type /not strict 
+console.log(b === c); false because they are not the same type
+console.log(!!d); //true because every its a non-empty string which has the value of true 
+                 // and !!true == true 
+```
+
+
+-------------------------------------------------------------------
+
+### QUESTION #2:
+
+
+Consider the following JavaScript expression:
+
+```javascript
+console.log(4 + 5 * "7");
+//5*7 goes first because multiplication got higher prio and 7 gets converted to num data type
+//so 4 +35 = 39 is the final output
+
+```
+
+
+-------------------------------------------------------------------
+
+### QUESTION #3:
+
+Evaluate the following expression:
+
+```javascript
+let result = 5 + 2 * 3 - 1;
+// 5 + 6 - 1 = 10 
+// multiplication goes first then the other operations 
+```
+
+-------------------------------------------------------------------
+
+### QUESTION #4:
+
+Consider the following code:
+
+```javascript
+let x = 10;
+let y = '10';
+console.log(x == y);
+console.log(x === y);
+```
+What will be the output of each `console.log` statement? **_You MUST explain WHY_**.
+
+-------------------------------------------------------------------
+
+### QUESTION #5:
+
+Given the code below:
+
+```javascript
+let num = "15";
+let isPositive = true;
+let result = (num > 10 && isPositive) || num < 0;
+console.log(result);
+```
+
+What is the value of result? **_You MUST explain the steps of evaluation taken by JS_**
