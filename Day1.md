@@ -81,3 +81,24 @@ document.getElementBy("p1-symbol").textContent="X"
 //change the subtitle text by adding something to it
 document.querySelector("header h2").append("KEK")
 ```
+## Delieverables 
+# Compound Assignment With Augmented Multiplication
+```javascript
+let a = 5;
+let b = 12;
+let c = 4.6;
+
+// Only change code below this line
+a*= 5;
+b *= 3 ;
+c *= 10;
+```
+#Concatenating Strings with the Plus Equals Operator
+```javascript
+let myStr = "im here first .";
+myStr += "im right after you"
+```
+#Use Dot Notation to Access the Properties of an Object
+```javascript
+Use Dot Notation to Access the Properties of an Object
+```
