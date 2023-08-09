@@ -122,10 +122,10 @@ Consider the following code:
 ```javascript
 let x = 10;
 let y = '10';
-console.log(x == y);
-console.log(x === y);
+console.log(x == y);// true because '=='doesnt compare data type
+console.log(x === y); //false because '===' compares data types 
 ```
-What will be the output of each `console.log` statement? **_You MUST explain WHY_**.
+
 
 -------------------------------------------------------------------
 
@@ -139,5 +139,10 @@ let isPositive = true;
 let result = (num > 10 && isPositive) || num < 0;
 console.log(result);
 ```
+Num is a string but it will be turned into a num when being compared using an operator 
+so 15>10 is true and the boolean is postive has a value of tree 
+logical operator && outputs true since both are true 
+and the logical operator || will go with true over the false statment 
+so it doesnt matter 
+final ouput is true  
 
-What is the value of result? **_You MUST explain the steps of evaluation taken by JS_**
