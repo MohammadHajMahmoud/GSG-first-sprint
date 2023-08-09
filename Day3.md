@@ -4,7 +4,9 @@
 - Arrays can store different types of elements, including numbers, strings, objects, and even other arrays.
 ## Usefull array methods 
 
-| Syntax      | Description |
+| Method      | Description |
 | ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| sort()      | Title       |
+| join()      | Text        |
+| concat()    |             |
+| push()      | adds an element to the end of the array |
