@@ -100,5 +100,10 @@ myStr += "im right after you"
 ```
 #Use Dot Notation to Access the Properties of an Object
 ```javascript
-Use Dot Notation to Access the Properties of an Object
+let dog = {
+  name: "Spot",
+  numLegs: 4
+};
+// Only change code below this line
+console.log("my dogs name is "+dog.name+ " and he got "+dog.numLegs+" Legs whao! almost like every other dog")
 ```
