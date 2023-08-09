@@ -139,8 +139,8 @@ let isPositive = true;
 let result = (num > 10 && isPositive) || num < 0;
 console.log(result);
 ```
-Num is a string but it will be turned into a num when being compared using an operator 
-so 15>10 is true and the boolean is postive has a value of tree 
+Num is a string but it will be turned into a number type when being compared using an operator 
+so 15>10 is true and the boolean isPostive has a value of true 
 logical operator && outputs true since both are true 
 and the logical operator || will go with true over the false statment 
 so it doesnt matter 
