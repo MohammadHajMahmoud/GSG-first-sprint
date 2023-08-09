@@ -82,7 +82,7 @@ document.getElementBy("p1-symbol").textContent="X"
 document.querySelector("header h2").append("KEK")
 ```
 ## Delieverables 
-# Compound Assignment With Augmented Multiplication
+### Compound Assignment With Augmented Multiplication
 ```javascript
 let a = 5;
 let b = 12;
@@ -93,12 +93,12 @@ a*= 5;
 b *= 3 ;
 c *= 10;
 ```
-#Concatenating Strings with the Plus Equals Operator
+### Concatenating Strings with the Plus Equals Operator
 ```javascript
 let myStr = "im here first .";
 myStr += "im right after you"
 ```
-#Use Dot Notation to Access the Properties of an Object
+### Use Dot Notation to Access the Properties of an Object
 ```javascript
 let dog = {
   name: "Spot",
