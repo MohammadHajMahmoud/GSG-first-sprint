@@ -41,3 +41,17 @@ Use arithmetic operators to compute:
 //The number of dogs you'd pet in a week if you pet 1 dog per hour while awake
 (24-5.7)*7 // output 128.1
 ```
+Exercise
+Use equality operators to compute:
+```javascript
+//1==1 && 1==1
+true 
+//1===1 is true but 1==="1" is false because it takes type into consideration 
+```
+#Expressions 
+an expression is a piece of code that produce a value  
+
+## let, const 
+- **let** assings a value to a variable ex ```let name = moha```
+- **const** does the same but its changable  ```const id = 4056445416```
+Variables 
