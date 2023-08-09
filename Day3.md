@@ -13,3 +13,9 @@
 | pop()       | removing the last element |
 | shift()     | removing first element|
 | unshift()   | adding an element to the beginning |
+
+### Mutable vs immutable 
+- mutable means it can be edited like arrays
+- immutable means it cant be edited like primitive tytpes
+- concat doesnt mutate the array it only make a copy while push and other methods do mutate the array
+  
