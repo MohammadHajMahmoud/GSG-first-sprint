@@ -4,7 +4,7 @@ if,else & else if
 - if not then the **else** code block is exectued
 - sometimes we get extra condtions with their own block of code using **else if**
   ```javascript
-function compareNumbers(x, y) {
+  function compareNumbers(x, y) {
     if (x > y) {
         return "x is greater than y.";
     } else if (x < y) {
@@ -12,5 +12,5 @@ function compareNumbers(x, y) {
     } else {
         return "x is equal to y.";
     }
-}
+  }
 ```
