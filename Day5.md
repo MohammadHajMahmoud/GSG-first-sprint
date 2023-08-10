@@ -13,7 +13,7 @@ if,else & else if
         return "x is equal to y.";
     }
   }
-```
+   ```
 ## Exercise
 - Write a conditional that logs a message saying whether your first name or last name is longer
 ```javascript
@@ -26,5 +26,4 @@ if,else & else if
     console.log("Last name is longer.");
   } else {
     console.log("First name and last name have the same length.");
-  }
-     ```
+  } ```
