@@ -58,6 +58,7 @@ To keep my progress organized, I've set up a folder structure for each day:
 - [**Day 2**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day2.md)
 - [**Day 3**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day3.md)
 - [**Day 4**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day4.md)
+- [**Day 5**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day5.md)
 
 ## Conclusion
 
