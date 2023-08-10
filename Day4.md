@@ -87,10 +87,65 @@ trueButton.textContent = str.charAt(0).toUpperCase() + str.slice(1)
 //change the h1 text to 'hovering' when the mouse moves into the element
 let h1 = document.getElementById("h1");
 h1.addEventListener("mouseover", ()=>{
-h1.textContent = "hovering";
+  h1.textContent = "hovering";
 });
 //change the h1 text to "Quiz.js" when the mouse moves out of the element
 h1.addEventListener("mouseout", ()=>{
-h1.textContent = "Quiz.js";
+  h1.textContent = "Quiz.js";
 });
+```
+# Deliverables 
+- Global Scope and Functions
+```javascript
+let myGlobal = 10
+function fun1() {
+  oopsGlobal = 5
+}
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+//explanation : oopGlobal is not blockscoped or function scoped it is global 
+```
+- Local Scope and Functions
+```javascript
+function myLocalScope() {
+  var myVar = 5
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+console.log('outside myLocalScope', myVar);
+//myVar that is outside the function isnt being accessed  because its within the function scope
+```
+- Global vs. Local Scope in Functions
+```javascript
+// Setup
+const outerWear = "T-Shirt";
+function myOutfit() {
+  let myOutfit = "sweater" 
+  let outerWear = myOutfit
+  return outerWear;
+}
+myOutfit();
+//value of outWear that is within the function overides the global outWear
+```
+- Stand in Line
+```javascript
+function nextInLine(arr, item) {
+  arr.push(item)
+  let removed = arr.shift()
+  return removed;
+}
+// Setup
+let testArr = [1, 2, 3, 4, 5];
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+//shift function doesnt only remove the first element of the array it also returns it 
 ```
