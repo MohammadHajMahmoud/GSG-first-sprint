@@ -55,7 +55,8 @@ To make the most of this challenge, i'll be following these procedures:
 To keep my progress organized, I've set up a folder structure for each day:
 
 - [**Day 1**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day1.md)
-
+- [**Day 2**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day2.md)
+- [**Day 3**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day3.md)
 
 ## Conclusion
 
