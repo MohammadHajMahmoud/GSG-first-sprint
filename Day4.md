@@ -10,7 +10,7 @@ add(2,3)
 ```
 - parameters are the input the function expects while arguments are the values called
 - when declaring a fucntion always use valid variabels
-- a function with no return statment doesnt give a vaue 
+- a function with no return statment doesnt give a value 
 ```javascript
 function printHello(){
   console.log("Hello:)
