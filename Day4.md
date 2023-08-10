@@ -30,13 +30,13 @@ function multiply(x,y){
   return x*y
 }
 ```
--yell
+- yell
 ```javascript
 function yell(str){
   return str.toUpperCase()
 }
 ```
--longerThan
+- longerThan
 ```javascript
 function longerThan(arr1,arr2){
   return arr1.length > arr2.length
