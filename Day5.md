@@ -16,9 +16,9 @@ if,else & else if
    ```
 ## Exercise
 - Write a conditional that logs a message saying whether your first name or last name is longer
-```javascript
-  let firstName = "John";
-  let lastName = "Doe";
+  ```javascript
+  let firstName = "mohammad";
+  let lastName = "mahmoud";
 
   if (firstName.length > lastName.length) {
     console.log("First name is longer.");
@@ -27,3 +27,18 @@ if,else & else if
   } else {
     console.log("First name and last name have the same length.");
   } ```
+- check wether an array is empty
+```javascript
+function isEmpty(array) {
+    return array.length === 0;
+}
+```
+- truthy or falsy array
+``` javascript
+      let testArray = [];
+      if (testArray) {
+        console.log("The array is truthy.");
+      } else {
+      console.log("The array is falsy.");
+  }
+  ```
