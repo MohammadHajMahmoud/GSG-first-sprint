@@ -73,8 +73,8 @@ console.log(feeling);
 //calling the trap function assinged a new value to the variable feeling 
 ```
 ## var vs let
--variables declared with var have function scope or global scope, depending on where they are declared.
--variables declared with let have block scope, which means they are limited to the block in which they are defined like when they are defined within a function.
+- variables declared with var have function scope or global scope, depending on where they are declared.
+- variables declared with let have block scope, which means they are limited to the block in which they are defined like when they are defined within a function.
 ## addEventListener Exercise 
 ```javascript
 //Capitlize the test of the true button when its clicked
