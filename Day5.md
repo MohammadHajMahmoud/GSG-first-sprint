@@ -18,13 +18,13 @@ if,else & else if
 - Write a conditional that logs a message saying whether your first name or last name is longer
 ```javascript
   let firstName = "John";
-let lastName = "Doe";
+  let lastName = "Doe";
 
-if (firstName.length > lastName.length) {
+  if (firstName.length > lastName.length) {
     console.log("First name is longer.");
-} else if (firstName.length < lastName.length) {
+  } else if (firstName.length < lastName.length) {
     console.log("Last name is longer.");
-} else {
+  } else {
     console.log("First name and last name have the same length.");
-}
-```
+  }
+     ```
