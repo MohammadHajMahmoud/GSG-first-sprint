@@ -42,3 +42,14 @@ function isEmpty(array) {
       console.log("The array is falsy.");
   }
   ```
+## Ternary operator 
+- is a concise way to write simple conditional expressions
+- its a shortend way to write an if else statement
+  ```javascript
+  let mood = (weatherForecast === "sunny") ? "happy" : "sad";
+  //mood is happy if the condition is met 
+  // IF NOT then its Sad :(
+  ```
+
+
+  
