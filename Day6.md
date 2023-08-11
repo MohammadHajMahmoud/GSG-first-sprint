@@ -15,3 +15,8 @@ console.log("i log before the api request)
 const result = await fetch("http/catsApi")
 console.log("i log after the api request)
 ```
+## Destructor 
+- usefull when giving more than a variable the same value
+  ```javascript
+  {hi,welcome} = "im here" 
+  ```
