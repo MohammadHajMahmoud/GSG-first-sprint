@@ -119,12 +119,12 @@ console.log("second");
 }
 ```
 - Use the map Method to Extract Data from an Array
-  ```javascript
+```javascript
   const ratings = [];
    watchList.map(movie=>{ratings.push({title: movie["Title"], rating: movie["imdbRating"]})})
-  ```
+```
 - Use the filter Method to Extract Data from an Array
-```jacascript
+```javascript
   const filteredList = watchList.filter((movie)=>
   parseInt(movie.imdbRating) >= 8.0).map(movie=>({ 'title': movie.Title,'rating':movie.imdbRating}));
 ```
