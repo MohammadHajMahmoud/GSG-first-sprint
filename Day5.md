@@ -92,7 +92,7 @@ const endIny = spices.filter(spice => spice.nickname.endsWith("y"));
 ```
 ## spread operator 
 - used to pass all the items from an array as arguments to function or method instead of looping on the original array
-  ```javascript
+```javascript
   const skills = ["HTML", "CSS", "JS"];
   const newSkills =
   ["React", "TypeScript", "Node"]
@@ -101,7 +101,7 @@ const endIny = spices.filter(spice => spice.nickname.endsWith("y"));
  ## Asynchronous vs Synchrnous
  - In synchronous operations are executed one after the other, and each task must wait for the previous one to complete before it can start.
  - In asynchronous operations can run independent of each other. While one task is waiting for something to complete , the program can continue executing another task without waiting for the previous ones.
-```javascript
+ ```javascript
 console.log("first");
 setTimeout(() => {
     console.log("third :( ");
