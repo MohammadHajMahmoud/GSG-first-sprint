@@ -16,8 +16,11 @@ const result = await fetch("http/catsApi")
 console.log("i log after the api request)
 ```
 ## Destructor 
-- usefull when giving more than a variable the same value
+- usefull when giving more than a variable the an atterbuite of an object , could also be an array 
   ```javascript
-  {hi,welcome} = "im here" 
+  const mohammad= [{firstName : "moha" , lastName : "haj"}]
+  let {firstName,lastName} = mohammad[0]
+  //works the same way
+  let [one ,two,three] = [1,2,3]
   ```
 ## 
