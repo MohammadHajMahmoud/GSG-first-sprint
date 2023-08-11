@@ -5,12 +5,11 @@ async function fetchCharacters() {
     );
     const data = await response.json();
     const characters = data.results.slice(0, 50);
-
     const characterList = document.getElementById("characterList");
     characters.forEach((character) => {
       const listItem = document.createElement("li");
       listItem.classList.add("card");
-      //this is easier than creating each item and giving it a textContent then appending it :)
+      //this is easier than creating an element for each property  giving it a textContent then appending it :)
       listItem.innerHTML = `
                 <h2>${character.name}</h2>
                 <img src="${character.image}" >
@@ -23,6 +22,7 @@ async function fetchCharacters() {
   } catch (error) {
     console.error("Error Loading ze data ", error);
     const errorDiv = document.createElement("div");
+    errorDiv.classList.add("error");
     errorDiv.textContent = " error occurred while Loading ze data :( ";
     document.body.appendChild(errorDiv);
   }
