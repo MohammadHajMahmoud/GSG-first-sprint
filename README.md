@@ -59,7 +59,7 @@ To keep my progress organized, I've set up a folder structure for each day:
 - [**Day 3**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day3.md)
 - [**Day 4**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day4.md)
 - [**Day 5**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day5.md)
-
+- [**Day 6**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day6.md)
 ## Conclusion
 
 I'm thrilled to embark on this 20-Day Learning JavaScript Challenge. Through dedicated learning, consistent practice, and active engagement with the community, I'm confident that I'll emerge as a better JavaScript developer. Let's get started and make the most out of this incredible learning opportunity! 🚀
