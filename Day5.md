@@ -50,6 +50,26 @@ function isEmpty(array) {
   //mood is happy if the condition is met 
   // IF NOT then its Sad :(
   ```
-
+##Loops 
+- helps us not to repeat our code
+- iterate over items in some data structure
+```javascript
+//normal for loop that we all know 
+const word = "aloha";
+for (let i = 0; i < word.length; i++) {
+    console.log(word[i]);
+}
+// for ...in loops example
+//i think its best to rotate over objects using this 
+const word = "aloha";
+for (let char in word) {
+    console.log( word[char]);
+}
+// for...of
+const word = "aloha";
+for (let character of word) {
+    console.log("Character: " + character);
+}
+```
 
   
