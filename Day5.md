@@ -50,7 +50,7 @@ function isEmpty(array) {
   //mood is happy if the condition is met 
   // IF NOT then its Sad :(
   ```
-##Loops 
+## Loops 
 - helps us not to repeat our code
 - iterate over items in some data structure
 ```javascript
