@@ -111,3 +111,41 @@ console.log("second");
   //they only wait each other to execute 
   // when the setTimeout is reached it goes to the event loop waiting for its time to be executed(its an asynchronous) 
 ```
+## Delieverables 
+- Use Multiple Conditional (Ternary) Operators
+ ```javascript
+ function checkSign(num) {
+  return (num > 0)? "positive":(num==0)?"zero" : "negative"
+}
+```
+- Use the map Method to Extract Data from an Array
+  ```javascript
+  const ratings = [];
+   watchList.map(movie=>{ratings.push({title: movie["Title"], rating: movie["imdbRating"]})})
+  ```
+- Use the filter Method to Extract Data from an Array
+```jacascript
+  const filteredList = watchList.filter((movie)=>
+  parseInt(movie.imdbRating) >= 8.0).map(movie=>({ 'title': movie.Title,'rating':movie.imdbRating}));
+```
+- Golf Code
+```javascript
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+function golfScore(par, strokes) {
+    if (strokes === 1) {
+        return "Hole-in-one!";
+    } else if (strokes <= par - 2) {
+        return "Eagle";
+    } else if (strokes === par - 1) {
+        return "Birdie";
+    } else if (strokes === par) {
+        return "Par";
+    } else if (strokes === par + 1) {
+        return "Bogey";
+    } else if (strokes === par + 2) {
+        return "Double Bogey";
+    } else {
+        return "Go Home!";
+    }
+  }
+```
