@@ -24,7 +24,6 @@ h1 {
 }
 
 .card {
-
   background: linear-gradient(90deg, rgba(97,199,226,1) 0%, rgba(56,101,110,1) 0%, rgba(97,199,226,1) 58%, rgba(97,199,226,1) 100%);
   width: 300px ;
   padding: 10px;
@@ -53,4 +52,7 @@ h1 {
   text-align: center;
   color: rgb(1, 8, 4);
 }
- 
+.error{
+  color: rgb(102, 227, 231)
+
+}
