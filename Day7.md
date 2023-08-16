@@ -55,4 +55,14 @@ const result = copyArrayAndManipulate([1,2,3],multiplyBy(2)) ;
   return filteredArr;
 };
 ```
-- 
+- Apply Functional Programming to Convert Strings to URL Slugs
+```javascript
+function urlSlug(title) {
+  let lowerCaseTitle = title.trim().toLowerCase()
+  let arrTitle = lowerCaseTitle.split(/\s+/)
+  let strTitle = arrTitle.reduce((a,b)=>{
+return a+"-"+b
+})
+return strTitle
+}
+```
