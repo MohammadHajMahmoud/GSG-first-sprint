@@ -39,4 +39,4 @@ function outer() {
 
 outer();
 ```
-Explaination :  the function inner has access to the variable outerVar defined in the containing outer function. This is because of lexical scope. When inner is defined, it "closes over" the scope of outer, allowing it to access variables from that scope even after outer has finished executing.
+Explaination:  the function inner has access to the variable outerVar defined in the containing outer function. This is because of lexical scope. When inner is defined, it "closes over" the scope of outer, allowing it to access variables from that scope even after outer has finished executing.
