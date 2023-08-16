@@ -1,6 +1,6 @@
 # Closures
 - when a function is defined within another function and has access to its parent function's variables its called a closure
-- closures do memorise
+- closures do memorise 
 - simple clousre example that memoriese a counter
 - backpack is the data each closures instance have 
 ```javascript
