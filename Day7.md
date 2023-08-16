@@ -1,4 +1,3 @@
-![image](https://github.com/MohammadHajMahmoud/GSG-first-sprint/assets/73450813/d2a10f5d-6534-4829-9d9b-eec1ab846007)![image](https://github.com/MohammadHajMahmoud/GSG-first-sprint/assets/73450813/e300d55b-7fdb-4100-80f5-2884d8e5b1f0)
 # Thread of Execution 
 - JavaScript executes line by line
 - JavaScript store variables , fuctions and outputs in the global memory
