@@ -45,3 +45,14 @@ const result = copyArrayAndManipulate([1,2,3],multiplyBy(2)) ;
   - solution 
     ![image](https://github.com/MohammadHajMahmoud/GSG-first-sprint/assets/73450813/18dd81f7-dfeb-4d88-912b-60e8a3758c6e)
 
+## Callback
+- the function who calls another function is the higher order function
+## Deliverables 
+- Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem
+```javascript
+ const squareList = arr => {
+   let  filteredArr = arr.filter(a=> a>0 && Number.isInteger(a)).map(a=>a*a)
+  return filteredArr;
+};
+```
+- 
