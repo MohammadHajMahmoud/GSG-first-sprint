@@ -203,4 +203,20 @@ const powerCalculator = powerOf(baseNumber);
 console.log(powerCalculator(3));  // 8 
 ```
 - Write a closure named compose that takes multiple functions as arguments and returns a new function. The returned function should apply the provided functions in reverse order, passing the result of each function as an argument to the next function.
+```javascript
+function compose(...functions) {
+    return function(value) {
+        for (let i =0 ;  i<functions.length ; i++) {
+            value = functions[i](value);
+        }
+        return value;
+    };
+}
+//some operations 
+const add2 = x => x + 2;
+const multiply3 = x => x * 3;
+const subtract5 = x => x - 5;
 
+const composedFunction = compose(subtract5, multiply3, add2);
+console.log(composedFunction(10)); // (10-5)*3+2 = 17
+```
