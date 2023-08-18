@@ -50,4 +50,5 @@ const futureData = fetch(/api/)
 futureData.then(display)
 console.log("me first")
 ```
-in this code the promise was executed and data was displayed before saying "hi" because there is a microtask queue takes promises  and this que is getting checked by the event loop
+in this code the promise was executed and data was displayed before saying "hi" because there is a microtask queue takes promises this queue is getting checked by the event loop before the call stack queue because it has higher prio
+
