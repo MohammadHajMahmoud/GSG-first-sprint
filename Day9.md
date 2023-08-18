@@ -52,3 +52,154 @@ console.log("me first")
 ```
 in this code the promise was executed and data was displayed before saying "hi" because there is a microtask queue takes promises this queue is getting checked by the event loop before the call stack queue because it has higher prio
 
+# Delieverables 
+### Question 1
+```javascript
+const task1 = (cb) => setTimeout(() => {
+  const message = "Task 1 has executed successfully!";
+  cb(message);
+}, 3000)
+
+const task2 = (cb) => setTimeout(() => {
+  const message = "Task 2 has executed successfully!";
+  cb(message);
+}, 0)
+
+const task3 = (cb) => setTimeout(() => {
+  const message = "Task 3 has executed successfully!";
+  cb(message);
+}, 1000)
+
+const task4 = (cb) => setTimeout(() => {
+  const message = "Task 4 has executed successfully!";
+  cb(message);
+}, 2000)
+
+const task5 = (cb) => setTimeout(() => {
+  const message = "Task 5 has executed successfully!";
+  cb(message);
+}, 4000)
+
+const asyncTasks = [task1, task2, task3, task4, task5];
+
+const executeInSequenceWithCBs = (tasks, callback) => {
+  const results = [];
+  let Index = 0;
+
+  const executeNextTask = () => {
+    if (Index < tasks.length) {
+      const task = tasks[Index];
+      task((message) => {
+        results.push(message);
+        currentIndex++;
+        executeNextTask();
+      });
+    } else {
+      callback(results);
+    }
+  };
+
+  executeNextTask();
+};
+```
+### Question 2 
+```javascript
+const executeInParallelWithPromises = async (apis) => {
+  try {
+    const promises = apis.map(async api => {
+      const response = await fetch(api.apiUrl);
+      const data = await response.json();
+      return {
+        apiName: api.apiName,
+        apiUrl: api.apiUrl,
+        apiData: data
+      };
+    });
+
+    const results = await Promise.all(promises);
+    return results;
+  } catch (error) {
+    throw new Error(`error.message`);
+  }
+};
+
+const apis = [
+  {
+    apiName: "products", 
+    apiUrl: "https://dummyjson.com/products",
+  }, 
+  {
+    apiName: "users", 
+    apiUrl: "https://dummyjson.com/users",
+  }, 
+  {
+    apiName: "posts", 
+    apiUrl: "https://dummyjson.com/posts",
+  }, 
+  {
+    apiName: "comments", 
+    apiUrl: "https://dummyjson.com/comments",
+  }
+];
+
+executeInParallelWithPromises(apis)
+  .then(results => {
+    console.log(results);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+```
+### Question 3 
+```javascript
+const fetchApiData = async (api) => {
+  const response = await fetch(api.apiUrl);
+  const data = await response.json();
+  return {
+    apiName: api.apiName,
+    apiUrl: api.apiUrl,
+    apiData: data
+  };
+};
+
+const executeInSequenceWithPromises = async (apis) => {
+  try {
+    const results = [];
+    for (const api of apis) {
+      const result = await fetchApiData(api);
+      results.push(result);
+    }
+    return results;
+  } catch (error) {
+    throw new Error(`error.message`);
+  }
+};
+
+const apis = [
+  {
+    apiName: "products", 
+    apiUrl: "https://dummyjson.com/products",
+  }, 
+  {
+    apiName: "users", 
+    apiUrl: "https://dummyjson.com/users",
+  }, 
+  {
+    apiName: "posts", 
+    apiUrl: "https://dummyjson.com/posts",
+  }, 
+  {
+    apiName: "comments", 
+    apiUrl: "https://dummyjson.com/comments",
+  }
+];
+
+executeInSequenceWithPromises(apis)
+  .then(results => {
+    console.log(results);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+```
