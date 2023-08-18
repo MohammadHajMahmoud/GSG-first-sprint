@@ -19,7 +19,22 @@ After blockFor1Sec finishes running, the main thread becomes free. The event loo
 console.log("me first") is executed and "me first" is printed in the console 
 The event loop picks up the printHello function from the queue and executes it. The "hello" message is printed to the console.
 ## Event loop
-- store asynchronus calls in a que waiting fot their timer to finish
+- store asynchronus calls in a queue waiting for their timer to finish
 - checks whether the call stack is empty
 - when the call stack is empty the event loop sends the ready to execute functions/calls by timer order
   
+# Promises 
+- a promise is a plceholder object
+```javascript
+function display (data) {
+  console.log(data)
+}
+const futureData = fetch(/api/)
+futureData.then(display)
+console.log("me first")
+```
+The "me first" message is logged to the console.
+The fetch request is sent to the server to fetch data from /api/.
+The console.log(data) inside the display function will log the fetched data to the console once the promise is """"resolved"""".
+what mainly happend was the futureData was defined like an object place holder for the fetch response so once its resloved it will be storing it .
+-
