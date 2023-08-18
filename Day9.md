@@ -37,4 +37,17 @@ The "me first" message is logged to the console.
 The fetch request is sent to the server to fetch data from /api/.
 The console.log(data) inside the display function will log the fetched data to the console once the promise is """"resolved"""".
 what mainly happend was the futureData was defined like an object place holder for the fetch response so once its resloved it will be storing it .
--
+- then() method is used for promise handling so in our code it spacified that the display function should be executed when the futureData Promise is resolved
+```javascript
+function sayHi(){
+  console.log("hi")
+}
+setTimeout(sayHi,0)
+function display (data) {
+  console.log(data)
+}
+const futureData = fetch(/api/)
+futureData.then(display)
+console.log("me first")
+```
+in this code the promise was executed and data was displayed before saying "hi" because there is a microtask queue takes promises  and this que is getting checked by the event loop
