@@ -10,3 +10,8 @@ clear. Thus, corner cases aresafely managed.
   
  ![image](https://github.com/MohammadHajMahmoud/GSG-first-sprint/assets/73450813/f8fff262-70e2-42d5-b234-30752ce82d31)
 - AVOID USING NON-PRIMITIVE TYPES WHILE COMPARING !!!
+### why using "==" is better 
+-Knowing types is always better than not knowing them Static Types is not the only (or even necessarily best) way to know your types
+- `==` is not about comparisons with unknown types
+- `==` is about comparisons with known type(s)
+- Summary: making types known and obvious leads to better code. If types are known, == is best. otherwise, fall back to ===
