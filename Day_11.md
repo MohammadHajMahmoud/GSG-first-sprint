@@ -45,3 +45,9 @@ console.log(Object.is(undefined,null) === false);// true
 - toString
 - toNumber // toNumber([null])// 0 becase it becomes a empty string first
 - to boolean
+## Coearcion
+Coearcion is the automatic conversion of values from one data type to another in certain contexts
+### Boxing 
+- indirect way of using coearcion like when we use the .length method
+### some corner cases 
+![image](https://github.com/MohammadHajMahmoud/GSG-first-sprint/assets/73450813/6acd5ceb-9557-447a-b671-031f48404c34)
