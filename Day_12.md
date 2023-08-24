@@ -15,3 +15,20 @@ clear. Thus, corner cases aresafely managed.
 - `==` is not about comparisons with unknown types
 - `==` is about comparisons with known type(s)
 - Summary: making types known and obvious leads to better code. If types are known, == is best. otherwise, fall back to ===
+### static typing 
+- Type Annotations: You can explicitly specify the data type of a variable using type annotations.
+  ```javascript
+  let age: number = 25;
+  let name: string = "John";
+  ```
+ - so yes , typescript is just javascript with types
+### typescript & flow : Pros
+- They make types more obvious in code
+- Familiarity: they look like other language's type systems
+- They're very sophisticated and good at what they do
+### typescript & flow : Cons
+- Part of the problem with avoidance of whole swaths of JS, like pretending === saves
+you from needing to know types, is that it tends to systemically perpetuate bugs
+- You simply cannot write quality JS programs without knowingthe types involved in your operations.
+- Many claim that JS's type system is too difficult for newer devs to learn, and that static types are
+(somehow) more learnable
