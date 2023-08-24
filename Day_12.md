@@ -32,47 +32,6 @@ you from needing to know types, is that it tends to systemically perpetuate bugs
 - You simply cannot write quality JS programs without knowingthe types involved in your operations.
 - Many claim that JS's type system is too difficult for newer devs to learn, and that static types are
 (somehow) more learnable
-### QUESTION #1
-
-Given the following `promisesArray`, convert the array into an object using the
-`convertToObj` function.
-
-You should apply typescript types to every promise, the input of `convertToObj`,
-and the output of `convertToObj`. 
-
-Build interfaces and types as needed.
-
-```javascript
-
-const sayHelloWorld = new Promise(resolve, reject => {
-  resolve("Hello world!");
-});
-
-const checkBoolean = (boolean) => new Promise(resolve, reject => {
-  if (boolean) {
-    resolve(boolean);
-  } else {
-    reject(`Input is false :(`)
-  }
-})
-
-const returnObj = new Promise(resolve, reject => {
-  resolve({
-    x: "meow",
-    y: 45,
-  })
-})
-
-const promisesArray = [sayHeloWorld, checkBoolean, returnObj];
-
-const convertToObj = (array) => {
-  //write your code here;
-  return obj;
-}
-
-```
-
--------------------------------------------------------------------
 
 ### QUESTION #2:
 
@@ -82,9 +41,9 @@ then **justify your answer with an explanation**.
 ```javascript
 function testScope1() {
   if (true) {
-    var a = 1;
-    let b = 2;
-    const c = 3;
+    var a = 1; function-scoped
+    let b = 2;  block-scoped
+    const c = 3; block-scoped
   }
   console.log(a);
   console.log(b);
@@ -101,6 +60,7 @@ B) `1`, `undefined`, `ReferenceError`
 C) `1`, `ReferenceError`, `ReferenceError`   
 D) `1`, `ReferenceError`
 
+Correct answer is C becuase  b and c are not accessible due to being block scoped so they are only accessible within the If scope  and not the function 
 -------------------------------------------------------------------
 
 ### QUESTION #3:
@@ -110,13 +70,13 @@ then **justify your answer with an explanation**.
 
 ```javascript
 function testScope2() {
-  console.log(a);
+  console.log(a); 
   console.log(b);
   console.log(c);
   if (true) {
-    var a = 1;
-    let b = 2;
-    const c = 3;
+    var a = 1;// hoisted to the top of the function scope
+    let b = 2; // not hoisted outside the block 
+    const c = 3;// not hoisted outside the block 
   }
 }
 
@@ -128,10 +88,9 @@ testScope2();
 
 A) `undefined`, `ReferenceError`   
 B) `1`, `undefined`, `ReferenceError`   
-C)`undefined`, `undefined`,
-`ReferenceError`  
+C)`undefined`, `undefined`,`ReferenceError`  
 D) `1`, `ReferenceError`
-
+Correct Answer is D becuase `var a` was hoisted to the top  of the function so its decalred bot its undefined  as the vales is not assinged yet 
 -------------------------------------------------------------------
 
 ### QUESTION #4:
@@ -146,17 +105,18 @@ function testScope3() {
   let b = 100;
   const c = 45;
 
-  console.log([a, b, c]);
+  console.log([a, b, c]);//`[ 36, 100, 45 ]` values are taken from the blockscope for each and they are already assinged
 
   if (true) {
     var a = 1;
     let b = 2;
     const c = 3;
 
-    console.log([a, b, c]);
+    console.log([a, b, c]); //`[ 1, 2, 3 ]` here `a` was assinged a different value and b and c are different from the ones above as they     
+     werent declared before and here they are decalred and given new values 
   }
 
-  console.log([a, b, c]);
+  console.log([a, b, c]);//`[ 1,100, 45 ]` `a` was assinged a differet value since its accessable within the whole function while b &c used there own old values 
 }
 
 testScope3();
@@ -169,4 +129,5 @@ A) `[ 36, 100, 45 ]` | `[ 1, 2, 3 ]` | `[ 36, 2, 3 ]`
 B) `[ 36, 100, 45 ]` | `[1, 2, 3 ]` | `[ 36, 100, 45 ]`   
 C) `[ 36, 100, 45 ]` | `[ 1, 2, 3 ]` | `[ 1,100, 45 ]`   
 D) `[ 36, 100, 45 ]` | `[ 1, 2, 3 ]` | `[ 1, 2, 3 ]`
+Correct ANSWER is C 
 
