@@ -96,3 +96,56 @@ var teacher = "Suzy"
 otherTeacher() ;
 ```
 here the output is defined because teacher that is within the function scope was not intilized yet (occured)
+### QUESTION #1
+
+Given the following code snippet and **explain what's happening**.
+
+```javascript
+for (let i = 0; i < 5; i++) {
+    setTimeout(function() {
+      console.log("value of [i] is: ", i);
+    }, 100);
+}
+```
+
+Variable i in the loop is shared among all iterations of the loop and the callback functions passed to setTimeout. By the time the callbacks are executed, the loop has already completed, and the value of i is 5.
+With this change, each iteration of the loop will have its own separate i value that is captured by the closure created by the setTimeout callback function.
+-------------------------------------------------------------------
+
+### QUESTION #2
+
+Given the following code snippet and **explain what's happening**. 
+
+```javascript
+
+let array = []; 
+for (let i = 0; i < 5; i++) {
+   array.push(i); 
+}
+console.log("Current array is: ", array);
+
+```
+Provide a solution to fix it. 
+by changing the array and getting it out of the block scope because on each itaration the array was getting empty and pushed with a single item from the loop but with the current change the array is no longer getting emptyed by the loop and keeps on storing after its done it prints all 
+-------------------------------------------------------------------
+
+### QUESTION #3
+
+Given the following code snippet and **explain what's happening**. 
+
+```javascript
+
+let functions = [];
+
+for (let i = 0; i < 5; i++) {
+  functions.push(() => {
+    console.log("Current value of i is:", i);
+  });
+}
+
+functions.forEach((func) => func());
+
+```
+
+Provide a solution to fix it. 
+the same variable `i` is shared among all the arrow functions in the loop, and by the time the functions are executed, the loop has already finished, leading to the value of i being 5 for all of them. so when we use `let` instead it creates a block scope for each iteration unlike `var` 
