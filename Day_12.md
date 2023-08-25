@@ -84,13 +84,14 @@ testScope2();
 
 ```
 
-**Choices:**
+Choices:
 
 A) `undefined`, `ReferenceError`   
 B) `1`, `undefined`, `ReferenceError`   
 C)`undefined`, `undefined`,`ReferenceError`  
 D) `1`, `ReferenceError`
-Correct Answer is D becuase `var a` was hoisted to the top  of the function so its decalred bot its undefined  as the vales is not assinged yet 
+
+- Correct Answer is D becuase `var a` was hoisted to the top  of the function so its decalred bot its undefined  as the vales is not assinged yet 
 -------------------------------------------------------------------
 
 ### QUESTION #4:
@@ -129,5 +130,6 @@ A) `[ 36, 100, 45 ]` | `[ 1, 2, 3 ]` | `[ 36, 2, 3 ]`
 B) `[ 36, 100, 45 ]` | `[1, 2, 3 ]` | `[ 36, 100, 45 ]`   
 C) `[ 36, 100, 45 ]` | `[ 1, 2, 3 ]` | `[ 1,100, 45 ]`   
 D) `[ 36, 100, 45 ]` | `[ 1, 2, 3 ]` | `[ 1, 2, 3 ]`
-Correct ANSWER is C 
+
+- Correct ANSWER is C 
 
