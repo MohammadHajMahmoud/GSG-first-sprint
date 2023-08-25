@@ -86,3 +86,13 @@ exampleLet();
 ### Hoisting 
 - Hoisting is a concept in JavaScript where variable and function declarations are moved, or "hoisted," to the top of their containing scope during the compilation phase.
 - Hoisting applies to both var and function declarations but not to let and const declarations.
+```javascript
+var teacher = "Kyle" ;
+
+function otherTeacher() {
+console.log(teacher) ;
+var teacher = "Suzy"
+}
+otherTeacher() ;
+```
+here the output is defined because teacher that is within the function scope was not intilized yet (occured)
