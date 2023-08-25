@@ -53,19 +53,19 @@ To make the most of this challenge, i'll be following these procedures:
 ## Folder Structure
 
 To keep my progress organized, I've set up a folder structure for each day:
--course 1
+course 1
 - [**Day 1**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day1.md)
 - [**Day 2**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day2.md)
 - [**Day 3**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day3.md)
 - [**Day 4**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day4.md)
 - [**Day 5**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day5.md)
 - [**Day 6**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day6.md)
-- course 2
+ course 2
 - [**Day 7**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day7.md)
 - [**Day 8**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day8.md)
 - [**Day 9**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day9.md)
 - [**Day 10**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day10.md)
-- course 3
+ course 3
 - [**Day 11**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day_11.md)
 - [**Day 12**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day_12.md)
 - [**Day 13**](https://github.com/MohammadHajMahmoud/GSG-first-sprint/blob/main/Day_13.md)
