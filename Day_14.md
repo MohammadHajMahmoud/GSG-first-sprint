@@ -59,3 +59,25 @@ console.log(teacher)// outputs `mohammad`
 ### Block Scoping 
 - A block is a set of statements enclosed within curly braces {}.
 - this type of scoping mainly works for `let` and `const` cuz beacuse they dont apply hoisting
+```javascript
+// Using var (function scope)
+function exampleVar() {
+    if (true) {
+        var x = 10;
+    }
+    console.log(x);  // Outputs: 10
+}
+exampleVar();
+
+// Using let (block scope)
+function exampleLet() {
+    if (true) {
+        let y = 20;
+    }
+    // The following line would result in an error since 'y' is not accessible here
+    // console.log(y);
+}
+
+exampleLet();
+```
+### choosing `let` or `var`
