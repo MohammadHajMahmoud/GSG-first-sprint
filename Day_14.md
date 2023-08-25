@@ -81,3 +81,8 @@ function exampleLet() {
 exampleLet();
 ```
 ### choosing `let` or `var`
+- choose `var` for global variables that we want to access form everywhere
+- choose `let` when we want to have more control and managment of our variables within a scope
+### Hoisting 
+- Hoisting is a concept in JavaScript where variable and function declarations are moved, or "hoisted," to the top of their containing scope during the compilation phase.
+- Hoisting applies to both var and function declarations but not to let and const declarations.
