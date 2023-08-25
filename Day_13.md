@@ -4,7 +4,7 @@
 - there can be buckets within butckets like when we create a function and we declare a variable in it and we assing it a vlaue
 - using `use strict` at the top of our code makes the execution of a variable that wasnt declared gives an error
   Ex
-  ```javascript
+```javascript
   'use strict'
   topic = "hey"
   console.log(topic) // this will give a refrence erro in both cases 
@@ -14,4 +14,8 @@
   }
   myAge()// on execution this line will cause a refrence error due to the use of 'strict mode' but in defual mode it would just print `22` in     
   console 
-  ```
+```
+  Ex  on function parameter when the scope manager assings it 
+  
+  ![image](https://github.com/MohammadHajMahmoud/GSG-first-sprint/assets/73450813/a486fd4f-eceb-4174-a4bc-a50fa3c414af)
+
