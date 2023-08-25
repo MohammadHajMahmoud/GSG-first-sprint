@@ -56,9 +56,20 @@ const exampleNormalFunc3 = (string) => {
 
 
 const arrowHOF = (normalFunc) => {
-  // write your code here;
-}
-
+  return (...args1) => {  // ...args1 is an array of the firs  agruments entereed 
+    return (...args2) => { // ... args is an array that has the value of how much repetion is needed
+      if (args2.length === 0) {
+        console.log(normalFunc(...args1));
+      } else {
+        const result = normalFunc(...args1);
+        const times = args2[0];
+        for (let i = 0; i < times; i++) {
+          console.log(result);
+        }
+      }
+    };
+  };
+};
 const hofNormalFunc1 = arrowHOF(exampleNormalFunc1);
 const hofNormalFunc2 = arrowHOF(exampleNormalFunc2);
 const hofNormalFunc3 = arrowHOF(exampleNormalFunc3);
@@ -71,36 +82,7 @@ console.log(hofNormalFunc3("Meow")()); // logs "Meow Meow Meow!" once
 
 -------------------------------------------------------------------
 
-### QUESTION #2
 
-Build a function called `preserveThis` that takes a function as input and
-returns a new arrow function that behaves the same way as the input function but
-preserves the original this context when used as a method of an object.
-
-```javascript
-
-// Example object
-const obj = {
-  name: 'John',
-  greet: function (greeting) {
-    console.log(`${greeting}, ${this.name}!`);
-  }
-};
-
-const preserveThis = (func) => {
-  // write your code here;
-  return func;
-}
-
-// Wrap the greet function using preserveThis
-const preservedGreet = preserveThis(obj.greet);
-
-// Call the wrapped function as a method of the object
-preservedGreet('Hello'); // Output: "Hello, John!"
-
-```
-
--------------------------------------------------------------------
 
 ### QUESTION #3
 
@@ -123,7 +105,8 @@ function outer1() {
 outer1(); // Output: 10
 ```
 
-> **Reasoning for example 1's output:**  
+> **Reasoning for example 1's output:**
+x is declared within the outer1 function. When the inner1 function is defined inside outer1, it captures and closes over the lexical scope of its parent function, outer1. As a result, when inner1 is invoked using inner1(), it looks for the value of x in its enclosing scope, which is the scope of outer1. Since x is 10 in the scope of outer1, the console.log(x) statement within inner1 will output 10.
 > .................................................................................
 
 --------
@@ -145,5 +128,6 @@ function outer2() {
 outer2(); // Output: 20
 ```
 
-> **Reasoning for example 2's output:**  
+> **Reasoning for example 2's output:**
+ The first x is declared within the scope of outer2, and the second x is declared within the scope of inner2. When the inner2 function is defined inside outer2, it creates its own local scope with its own x variable that shadows the outer x variable. So, when inner2 is invoked using inner2(), it prints the value of its own local x, which is 20. The outer x variable with a value of 10 remains unchanged and is not accessible within the scope of inner2, which is why the output is 20.
 > .................................................................................
