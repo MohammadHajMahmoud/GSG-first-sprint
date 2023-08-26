@@ -126,7 +126,7 @@ console.log("Current array is: ", array);
 
 ```
 Provide a solution to fix it. 
-by changing the array and getting it out of the block scope because on each itaration the array was getting empty and pushed with a single item from the loop but with the current change the array is no longer getting emptyed by the loop and keeps on storing after its done it prints all 
+ - by changing the array and getting it out of the block scope because on each itaration the array was getting empty and pushed with a single item from the loop but with the current change the array is no longer getting emptyed by the loop and keeps on storing after its done it prints all 
 -------------------------------------------------------------------
 
 ### QUESTION #3
