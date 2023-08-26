@@ -108,7 +108,7 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-Variable i in the loop is shared among all iterations of the loop and the callback functions passed to setTimeout. By the time the callbacks are executed, the loop has already completed, and the value of i is 5.
+- Variable i in the loop is shared among all iterations of the loop and the callback functions passed to setTimeout. By the time the callbacks are executed, the loop has already completed, and the value of i is 5.
 With this change, each iteration of the loop will have its own separate i value that is captured by the closure created by the setTimeout callback function.
 -------------------------------------------------------------------
 
